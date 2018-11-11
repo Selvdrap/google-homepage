@@ -1,0 +1,234 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: arial,sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.google-nav {
+  display: flex;
+}
+
+.google-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.google-menu__item {
+  flex: 0 1 30px;
+}
+
+.google-menu__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.google-menu__link {
+  display: block;
+  color: rgba(0,0,0,1);
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  height: 30px;
+  transition: all 0.2s;
+  opacity: 0.8;
+}
+
+.google-menu__link:not(.google-menu__link--user):hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.google-menu__link--apps {
+  background-image: url(../img/show-apps-button.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  opacity: 0.58;
+}
+
+.google-menu__link--bell {
+  background-image: url(../img/notification.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  opacity: 0.58;
+}
+
+.google-menu__link--user {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5327a4;
+  opacity: 1;
+}
+
+.google-menu__link--user:after {
+  content: 'G';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.google-nav__menu {
+  padding-top: 15px;
+  padding-right: 28px;
+}
+
+.google-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 70vh;
+}
+
+.google__content {
+  padding-top: 153px;
+}
+
+.google-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 584px;
+}
+
+.google__form {
+  padding: 25px 0 30px;
+}
+
+.google-form-search {
+  flex-basis: 584px;
+  height: 44px;
+}
+
+.google-form__search {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.google-form-search__field {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  border: 1px solid #E3E0E0;
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: 0 1px 2px 0 rgb(200, 200, 200);
+}
+
+.google-form-search__mic {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/Google_mic.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; 
+  cursor: pointer;
+}
+
+.google-form__button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 54px;
+  height: 36px;
+  padding: 0 16px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.google-form__button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+.google-language {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #222;
+}
+
+.google-language__val {
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.google-language__val:hover {
+  text-decoration: underline;
+}
+
+.google-footer {
+  box-sizing: border-box;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  flex-basis: 85px;
+  color: rgba(0,0,0,.54);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.google-footer__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.google-footer__link {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgba(0,0,0,.54);
+}
+
+.google-footer__link:hover {
+  text-decoration: underline;
+}
+
+.google-footer__country, .google-footer__options {
+  flex: 1 1 50%;
+  display: flex;
+  padding: 0 30px;
+} 
+
+.google-footer__options {
+  border-top: 1px solid #e4e4e4;
+  justify-content: space-between;
+}
+
+.google-footer__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
