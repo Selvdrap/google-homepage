@@ -1,0 +1,43 @@
+.google-footer {
+  box-sizing: border-box;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  flex-basis: 85px;
+  color: rgba(0,0,0,.54);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.google-footer__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.google-footer__country, .google-footer__options {
+  flex: 1 1 50%;
+  display: flex;
+  padding: 0 30px;
+} 
+
+.google-footer__options {
+  border-top: 1px solid #e4e4e4;
+  justify-content: space-between;
+}
+
+.google-footer__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.google-footer__link {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgba(0,0,0,.54);
+}
+
+.google-footer__link:hover {
+  text-decoration: underline;
+}

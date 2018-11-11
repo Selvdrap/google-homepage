@@ -1,0 +1,89 @@
+.google-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 70vh;
+}
+
+.google-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 584px;
+}
+
+.google-form-search {
+  flex-basis: 584px;
+  height: 44px;
+}
+
+.google-form__search {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.google-form-search__field {
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  border: 1px solid #E3E0E0;
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: 0 1px 2px 0 rgb(200, 200, 200);
+}
+
+.google-form-search__mic {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/Google_mic.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain; 
+  cursor: pointer;
+}
+
+.google-form__button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 54px;
+  height: 36px;
+  padding: 0 16px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.google-form__button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+.google-language {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #222;
+}
+
+.google-language__val {
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.google-language__val:hover {
+  text-decoration: underline;
+}

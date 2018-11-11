@@ -1,0 +1,30 @@
+@import 'partials/google-nav';
+@import 'partials/google-content';
+@import 'partials/google-footer';
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: arial,sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.google__content {
+  padding-top: 153px;
+}
+
+.google__form {
+  padding: 25px 0 30px;
+}
+
+.google-nav__menu {
+  padding-top: 15px;
+  padding-right: 28px;
+}
