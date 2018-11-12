@@ -10,11 +10,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 584px;
+  width: auto;
 }
 
 .google-form-search {
   flex-basis: 584px;
+  min-width: 100%;
   height: 44px;
 }
 
@@ -86,4 +87,10 @@
 
 .google-language__val:hover {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 1367px) {
+  .google-form-search {
+    flex-shrink: 0;
+  }
 }

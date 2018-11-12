@@ -73,10 +73,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 584px; }
+  width: auto; }
 
 .google-form-search {
   flex-basis: 584px;
+  min-width: 100%;
   height: 44px; }
 
 .google-form__search {
@@ -141,6 +142,9 @@
 .google-language__val:hover {
   text-decoration: underline; }
 
+@media only screen and (min-width: 1367px) {
+  .google-form-search {
+    flex-shrink: 0; } }
 .google-footer {
   box-sizing: border-box;
   background: #f2f2f2;
@@ -165,7 +169,8 @@
 
 .google-footer__options {
   border-top: 1px solid #e4e4e4;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 .google-footer__item:not(:last-child) {
   margin-right: 28px; }
@@ -178,6 +183,18 @@
 .google-footer__link:hover {
   text-decoration: underline; }
 
+@media only screen and (max-width: 600px) {
+  .google-footer__country {
+    justify-content: center; }
+
+  .google-footer__list {
+    width: 100%;
+    text-align: center; }
+
+  .google-footer__item {
+    flex: 1 1 33.3%;
+    text-align: center;
+    margin-right: 0; } }
 html, body {
   padding: 0;
   margin: 0;
@@ -199,5 +216,10 @@ html, body {
 .google-nav__menu {
   padding-top: 15px;
   padding-right: 28px; }
+
+@media only screen and (max-width: 600px) {
+  .google__content {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
